@@ -1,7 +1,11 @@
-function takeANumber(line, name){
-  line.push(`${name}`)
-  return (`Welcome, ${name}. You are number ${line.length} in line.`)
+function takeANumber(line,name){
+  line.push(line[-1]+1)
+  return (`Welcome, You are number ${line.length} in line.`)
+ 
 }
+
+
+
 function nowServing(katzDeliLine){
   var i = 0 
   while (i<katzDeliLine.length){i++}
